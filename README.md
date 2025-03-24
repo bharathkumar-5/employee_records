@@ -44,7 +44,7 @@ Use the following credentials to log in as an admin:
 
 ## 📷 Home Page Screenshot
 
-![Home Page](./screenshots/home.png)
+![Home Page](https://drive.google.com/uc?id=1vV_eqLVSajQkFlzS9jIitRRyphXEZiKP)
 
 ---
 
