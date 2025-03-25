@@ -1,11 +1,12 @@
 
 const initialState = {
-  isAuthenticated: false,
+  isAuthenticated: !!localStorage.getItem('token'),
   user: null,
-  token: localStorage.getItem('token'),
+  token: localStorage.getItem('token') || null,
   loading: false,
   error: null
 };
+
 
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -26,8 +27,12 @@ const authReducer = (state = initialState, action) => {
         error: null
       };
     case 'AUTH_FAILURE':
+      localStorage.removeItem('token')
       return {
         ...state,
+        isAuthenticated: false,
+        user: null,
+        token: null,
         loading: false,
         error: action.payload
       };
