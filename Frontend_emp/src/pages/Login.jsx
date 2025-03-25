@@ -132,7 +132,7 @@ const Login = () => {
 
           <div className="mt-6 text-center text-sm text-gray-500 dark:text-gray-400">
             <p>Employee Record Management System</p>
-            <p className="mt-1">Demo credentials: admin@example.com / password</p>
+            <p className="mt-1">Demo credentials - Email Address : admin@gmail.com / password: admin1</p>
           </div>
         </Card>
       </div>
